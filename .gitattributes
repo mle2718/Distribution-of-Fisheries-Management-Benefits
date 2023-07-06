@@ -3,3 +3,26 @@
 # This small file will fix that.  Line endings in the repository will be set to LF while local line endings will be left "alone".  
 # This enables windows users to develop using CRLF but then push using LF.
 * text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.R text
+*.Rmd text
+*.r text
+*.rmd text
+*.Rproj text
+*.bib text
+*.tex text
+*.csl text
+*.yml text
+*.md text
+*.html text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
